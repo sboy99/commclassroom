@@ -48,10 +48,10 @@ const Header = () => {
       </div>
 
       {/* buttons */}
-      <div className="mt-2 flex items-center gap-2 flex-wrap">
+      <div className="mt-2 flex items-center gap-x-4 gap-y-2 flex-wrap">
         <a
           href="#course"
-          className="px-4 w-full md:w-fit text-center py-2 bg-slate-700 hover:bg-slate-600 transition-all duration-300 text-white font-medium capitalize text-lg rounded-md"
+          className="px-4 w-full md:w-fit text-center py-2 bg-sky-50 hover:bg-slate-600 transition-all duration-300 text-sky-500 font-medium capitalize text-lg rounded-md"
         >
           See Courses
         </a>
