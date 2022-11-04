@@ -6,7 +6,6 @@ import { useApp } from "../context/AppProvider";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { AiFillGithub } from "react-icons/ai";
 import { Popover, Transition } from "@headlessui/react";
-import { IconButton } from "../utils";
 
 const Navbar = () => {
   const { width } = useApp();
@@ -81,16 +80,16 @@ const SmallScreenNavbar = () => {
       <Popover className="relative z-0 px-4">
         {({ open }) => (
           <>
-            <Popover.Button className={`outline-none z-10`}>
-              <IconButton
-                className={`${open ? `text-rose-600` : `text-blue-600`}`}
-              >
+            <Popover.Button
+              className={`outline-none z-10 p-2 rounded-full hover:bg-slate-50`}
+            >
+              <div className={`${open ? `text-rose-600` : `text-blue-600`}`}>
                 {open ? (
                   <XMarkIcon className="w-7 h-7" />
                 ) : (
                   <Bars3Icon className="w-7 h-7" />
                 )}
-              </IconButton>
+              </div>
             </Popover.Button>
 
             {/* overlay */}
