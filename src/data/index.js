@@ -1,4 +1,5 @@
 import { AiFillYoutube } from "react-icons/ai";
+import aboutUsImage from "../assets/aboutUs.svg";
 import {
   MegaphoneIcon,
   HomeIcon,
@@ -44,3 +45,23 @@ export const ExternalLinks = [
     color: `text-rose-600`,
   },
 ];
+
+// About Us
+export const AboutUs = [
+  {
+    icon: ``,
+    desc: `We believe that every student, irrespective of their college or branch, can make it big. Community Classroom is an initiative built on this thought.`,
+  },
+  {
+    icon: ``,
+    desc: `We provide hands-on training, mentorship for FREE and have an inclusive community.`,
+  },
+  {
+    icon: ``,
+    desc: `Get expert guidance with career, Open Source, and  internships, jobs around the world.`,
+  },
+];
+
+// Images
+
+export { aboutUsImage };

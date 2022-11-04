@@ -8,12 +8,16 @@ import {
   Courses,
   Mentorship,
   Blog,
+  JoinDiscord,
 } from "../components";
 
 const HomePage = () => {
   return (
-    <div className="flex flex-col container mx-auto p-4">
-      <Header />
+    <div className="flex flex-col ">
+      <div className="container mx-auto p-4">
+        <Header />
+      </div>
+      <JoinDiscord />
       <About />
       <Courses />
       <Event />
