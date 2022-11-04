@@ -1,22 +1,29 @@
-import React from 'react'
-import {Route, Routes} from 'react-router-dom';
-import './App.css'
-import Course from './pages/CoursePage.js'
-import HomePage from './pages/HomePage.js'
-import Events from './pages/EventsPage.js'
-import Roadmaps from './pages/RoadmapsPage';
+import React from "react";
+import { Route, Routes } from "react-router-dom";
+import "./App.css";
+import {
+  CoursePage,
+  EventsPage,
+  HomePage,
+  RoadMapsPage,
+  PodcastsPage,
+} from "./pages";
+import { Layout } from "./components";
 
 const App = () => {
   return (
     <div className="main">
-    <Routes>
-      <Route exact path="/" element={<HomePage/>} />
-      <Route path="/course" element={<Course />} />
-      <Route path="/event" element={<Events />} />
-      <Route path="/roadmaps" element={<Roadmaps />} />
-    </Routes>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<HomePage />} />
+          <Route path="/courses" element={<CoursePage />} />
+          <Route path="/events" element={<EventsPage />} />
+          <Route path="/podcasts" element={<PodcastsPage />} />
+          <Route path="/roadmaps" element={<RoadMapsPage />} />
+        </Route>
+      </Routes>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
