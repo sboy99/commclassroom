@@ -8,7 +8,7 @@ const Courses = () => {
   return (
     <div
       id="course"
-      className="relative min-h-screen-50 overflow-hidden z-0 bg-slate-800 "
+      className="relative min-h-screen-50 overflow-hidden z-0 bg-slate-800 py-8 lg:py-2"
     >
       {/* overlay */}
       <div className="absolute inset-0 w-full h-full bg-gradient-to-l from-indigo-800 via-purple-500 to-pink-500 opacity-90 z-0 "></div>
@@ -29,9 +29,9 @@ const Courses = () => {
           className="flex flex-col items-center justify-center gap-y-4"
         >
           <div className="text-white p-4 border-2 border-white rounded-xl">
-            <BookOpenIcon className="w-24 h-24 lg:w-80 lg:h-80 animate-pulse" />
+            <BookOpenIcon className="w-40 h-40 md:w-80 md:h-80 animate-pulse" />
           </div>
-          <div className="w-full text-center  lg:text-xl px-4 py-1 lg:py-2 rounded-full bg-white text-slate-700 font-medium lg:font-semibold">
+          <div className="w-full text-center  md:text-xl px-4 py-1 lg:py-2 rounded-full bg-white text-slate-700 font-medium lg:font-semibold">
             Explore Courses
           </div>
         </Link>
