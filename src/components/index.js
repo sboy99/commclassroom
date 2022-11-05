@@ -1,6 +1,6 @@
 import About from "./About";
 import Blog from "./Blog";
-import Event from "./Event";
+import Events from "./Events";
 import Footer from "./Footer";
 import Founder from "./Founder";
 import Header from "./Header";
@@ -18,7 +18,7 @@ export {
   JoinDiscord,
   Blog,
   Courses,
-  Event,
+  Events,
   Footer,
   Founder,
   Header,

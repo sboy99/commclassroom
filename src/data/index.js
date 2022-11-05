@@ -2,6 +2,11 @@ import { AiFillYoutube } from "react-icons/ai";
 import aboutUsImage from "../assets/aboutUs.svg";
 import abstactDiamond from "../assets/abstractDiamond.png";
 import handsOn from "../assets/handson.jpg";
+import event from "../assets/event.png";
+import eventImg1 from "../assets/eventImg1.png";
+import eventImg2 from "../assets/eventImg2.png";
+import eventImg3 from "../assets/eventImg3.png";
+import eventImg4 from "../assets/eventImg4.png";
 import {
   MegaphoneIcon,
   HomeIcon,
@@ -11,9 +16,20 @@ import {
   SparklesIcon,
   UsersIcon,
   TrophyIcon,
+  UserGroupIcon,
+  AcademicCapIcon,
 } from "@heroicons/react/24/outline";
 // Images
-export { aboutUsImage, abstactDiamond, handsOn };
+export {
+  aboutUsImage,
+  abstactDiamond,
+  handsOn,
+  event,
+  eventImg1,
+  eventImg2,
+  eventImg3,
+  eventImg4,
+};
 
 // Navbar
 export const Links = [
@@ -86,5 +102,21 @@ export const CourseFeatures = [
     icon: TrophyIcon,
     title: `Plenty Courses to make you a Champion`,
     desc: `Explore a wide range of courses including Data Structures & Algorithms, Web Development, DevOps, Machine Learning, and more!`,
+  },
+];
+
+// Events
+export const EventsFeatures = [
+  {
+    icon: UserGroupIcon,
+    desc: `All of our events are completely free and open for everyone. Fun-filled events with no compromise on quality.`,
+  },
+  {
+    icon: AcademicCapIcon,
+    desc: `Events conducted will help develop various skills of students in co-curricular activities and to expose them to the current trends in the technical and professional fields.`,
+  },
+  {
+    icon: GiftIcon,
+    desc: `Explore the plethora of events & have the opportunity to grab amazing prizes & goodies!`,
   },
 ];

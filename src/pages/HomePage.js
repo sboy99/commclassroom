@@ -3,7 +3,7 @@ import {
   Header,
   Podcast,
   Founder,
-  Event,
+  Events,
   About,
   Courses,
   Mentorship,
@@ -20,7 +20,7 @@ const HomePage = () => {
       <JoinDiscord />
       <About />
       <Courses />
-      <Event />
+      <Events />
       <Mentorship />
       <Podcast />
       <Blog />
