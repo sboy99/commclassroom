@@ -3,6 +3,7 @@ import aboutUsImage from "../assets/aboutUs.svg";
 import abstactDiamond from "../assets/abstractDiamond.png";
 import handsOn from "../assets/handson.jpg";
 import event from "../assets/event.png";
+import road from "../assets/road.jpg";
 import eventImg1 from "../assets/eventImg1.png";
 import eventImg2 from "../assets/eventImg2.png";
 import eventImg3 from "../assets/eventImg3.png";
@@ -29,6 +30,7 @@ export {
   eventImg2,
   eventImg3,
   eventImg4,
+  road,
 };
 
 // Navbar
@@ -118,5 +120,16 @@ export const EventsFeatures = [
   {
     icon: GiftIcon,
     desc: `Explore the plethora of events & have the opportunity to grab amazing prizes & goodies!`,
+  },
+];
+
+export const RoadmapPoints = [
+  {
+    icon: MapIcon,
+    desc: `A comprehensive answer to all of your mentoring needs, including educational materials, communities to join, opportunities, and much more.`,
+  },
+  {
+    icon: MapIcon,
+    desc: `Roadmaps to help you stay on track, including those for Open-source, Full-Stack, Devrel, and more.`,
   },
 ];
