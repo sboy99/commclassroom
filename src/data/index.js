@@ -1,12 +1,20 @@
 import { AiFillYoutube } from "react-icons/ai";
 import aboutUsImage from "../assets/aboutUs.svg";
+import abstactDiamond from "../assets/abstractDiamond.png";
+import handsOn from "../assets/handson.jpg";
 import {
   MegaphoneIcon,
   HomeIcon,
   MapIcon,
   GiftIcon,
   BookOpenIcon,
+  SparklesIcon,
+  UsersIcon,
+  TrophyIcon,
 } from "@heroicons/react/24/outline";
+// Images
+export { aboutUsImage, abstactDiamond, handsOn };
+
 // Navbar
 export const Links = [
   {
@@ -62,6 +70,21 @@ export const AboutUs = [
   },
 ];
 
-// Images
-
-export { aboutUsImage };
+// Courses
+export const CourseFeatures = [
+  {
+    icon: SparklesIcon,
+    title: `Quality Content but Completely Free`,
+    desc: `All courses are FREE while never compromising on quality.`,
+  },
+  {
+    icon: UsersIcon,
+    title: `Detailed Hands On Explanation plus Mentorship`,
+    desc: `We cover every topic in detail with a hands-on approach and mentor you to stand out to get opportunities by breaking all the barriers.`,
+  },
+  {
+    icon: TrophyIcon,
+    title: `Plenty Courses to make you a Champion`,
+    desc: `Explore a wide range of courses including Data Structures & Algorithms, Web Development, DevOps, Machine Learning, and more!`,
+  },
+];
