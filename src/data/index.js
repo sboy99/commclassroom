@@ -8,6 +8,9 @@ import eventImg1 from "../assets/eventImg1.png";
 import eventImg2 from "../assets/eventImg2.png";
 import eventImg3 from "../assets/eventImg3.png";
 import eventImg4 from "../assets/eventImg4.png";
+import podcastImg from "../assets/podcast.png";
+import circuitBoard from "../assets/svg/circuit-board.svg";
+
 import {
   MegaphoneIcon,
   HomeIcon,
@@ -22,6 +25,7 @@ import {
 } from "@heroicons/react/24/outline";
 // Images
 export {
+  podcastImg,
   aboutUsImage,
   abstactDiamond,
   handsOn,
@@ -31,6 +35,7 @@ export {
   eventImg3,
   eventImg4,
   road,
+  circuitBoard,
 };
 
 // Navbar
