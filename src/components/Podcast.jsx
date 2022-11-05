@@ -7,7 +7,7 @@ import { IoHeadset } from "react-icons/io5";
 const Podcast = () => {
   return (
     <div id="podcast" className="relative pt-8 z-10">
-      <div className="relative container mx-auto p-6 md:p-16 md:pt-20 bg-slate-100 rounded-xl min-h-64 flex items-center justify-center gap-8 flex-wrap-reverse">
+      <div className="relative container mx-auto p-6 md:p-16 md:pt-20 bg-violet-500/10 rounded-xl min-h-64 flex items-center justify-center gap-8 flex-wrap-reverse">
         {/* left */}
         <div className="max-w-2xl space-y-3 ">
           {/* title */}
