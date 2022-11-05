@@ -10,6 +10,7 @@ import eventImg3 from "../assets/eventImg3.png";
 import eventImg4 from "../assets/eventImg4.png";
 import podcastImg from "../assets/podcast.png";
 import circuitBoard from "../assets/svg/circuit-board.svg";
+import blogingBro from "../assets/svg/Blogging-bro.svg";
 
 import {
   MegaphoneIcon,
@@ -22,9 +23,12 @@ import {
   TrophyIcon,
   UserGroupIcon,
   AcademicCapIcon,
+  CalendarDaysIcon,
+  LightBulbIcon,
 } from "@heroicons/react/24/outline";
 // Images
 export {
+  blogingBro,
   podcastImg,
   aboutUsImage,
   abstactDiamond,
@@ -128,6 +132,7 @@ export const EventsFeatures = [
   },
 ];
 
+// Roadmaps
 export const RoadmapPoints = [
   {
     icon: MapIcon,
@@ -136,5 +141,24 @@ export const RoadmapPoints = [
   {
     icon: MapIcon,
     desc: `Roadmaps to help you stay on track, including those for Open-source, Full-Stack, Devrel, and more.`,
+  },
+];
+
+// Blogs
+export const BlogPoints = [
+  {
+    icon: CalendarDaysIcon,
+    title: `Monthly Blog Events`,
+    desc: `Participate in monthly blog events and win exciting swags and prizes.`,
+  },
+  {
+    icon: BookOpenIcon,
+    title: `Read Inovative Blogs `,
+    desc: `Read the blogs written or curated specially by the Community Classroom team.`,
+  },
+  {
+    icon: LightBulbIcon,
+    title: `Completely Up to Date Blogs`,
+    desc: `These blogs are written with the present in mind, all of these blogs are up to date.`,
   },
 ];
