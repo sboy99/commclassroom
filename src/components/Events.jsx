@@ -80,6 +80,8 @@ function ImageGrid() {
         <img
           src={eventImg1}
           alt="img1"
+          loading="lazy"
+          decoding="async"
           className="w-full h-full object-cover object-center"
         />
       </div>
@@ -87,7 +89,9 @@ function ImageGrid() {
       <div className="bg-slate-300 col-start-5 col-span-full row-start-1 row-end-5 rounded-md overflow-hidden">
         <img
           src={eventImg2}
-          alt="img1"
+          alt="img2"
+          loading="lazy"
+          decoding="async"
           className="w-full h-full object-cover object-center"
         />
       </div>
@@ -95,7 +99,9 @@ function ImageGrid() {
       <div className="bg-slate-300 col-start-1 col-end-5 row-start-3 row-span-full rounded-md overflow-hidden">
         <img
           src={eventImg4}
-          alt="img1"
+          alt="img3"
+          loading="lazy"
+          decoding="async"
           className="w-full h-full object-cover object-center"
         />
       </div>
@@ -103,7 +109,9 @@ function ImageGrid() {
       <div className="bg-slate-300 col-start-5 col-span-full row-start-5 row-span-full rounded-md overflow-hidden">
         <img
           src={eventImg3}
-          alt="img1"
+          alt="img4"
+          loading="lazy"
+          decoding="async"
           className="w-full h-full object-cover object-center"
         />
       </div>
