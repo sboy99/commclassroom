@@ -11,6 +11,7 @@ import eventImg4 from "../assets/eventImg4.png";
 import podcastImg from "../assets/podcast.png";
 import circuitBoard from "../assets/svg/circuit-board.svg";
 import blogingBro from "../assets/svg/Blogging-bro.svg";
+import notFound from "../assets/svg/Error404.svg";
 
 import {
   MegaphoneIcon,
@@ -28,6 +29,7 @@ import {
 } from "@heroicons/react/24/outline";
 // Images
 export {
+  notFound,
   blogingBro,
   podcastImg,
   aboutUsImage,

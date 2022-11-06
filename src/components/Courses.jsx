@@ -1,7 +1,7 @@
 import React from "react";
 import { handsOn } from "../data";
 import { BookOpenIcon, ArrowRightIcon } from "@heroicons/react/24/solid";
-import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import { CourseFeatures } from "../data";
 
 const Courses = () => {
@@ -25,12 +25,12 @@ const Courses = () => {
       {/* courses */}
       <div className="relative container mx-auto p-4 lg:p-16 flex items-center justify-center gap-2 flex-col ">
         {/* top */}
-        <Link to={`/courses`} className="justify-self-start ">
+        <HashLink to={`/courses/#top`} smooth className="justify-self-start ">
           <div className="w-full text-center  md:text-xl px-6 py-1 rounded-full bg-white text-indigo-600 font-medium lg:font-semibold flex items-center justify-center gap-x-1">
             <BookOpenIcon className="w-6 h-6" /> Explore Courses{" "}
             <ArrowRightIcon className="w-6 h-6" />
           </div>
-        </Link>
+        </HashLink>
         {/* bottom */}
         <div className="w-full lg:max-w-2xl">
           {/* head */}

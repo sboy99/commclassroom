@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import { ImMap } from "react-icons/im";
 import { MapIcon, ArrowRightIcon } from "@heroicons/react/24/outline";
 import { road, RoadmapPoints } from "../data";
@@ -36,14 +36,14 @@ const Mentorship = () => {
             </p>
           </h1>
           {/* navigate */}
-          <Link
-            to={`/roadmaps`}
+          <HashLink
+            to={`/roadmaps/#top`}
             className="flex items-center gap-x-1 justify-center px-6 py-2 rounded-full text-sky-500 bg-sky-50 border border-sky-500 font-medium "
           >
             {" "}
             <MapIcon className="w-6 h-6" /> Explore all Roadmaps{" "}
             <ArrowRightIcon className="w-6 h-6" />
-          </Link>
+          </HashLink>
           <div className="space-y-4">
             {RoadmapPoints.map((points, index) => (
               <div

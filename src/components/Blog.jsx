@@ -1,6 +1,7 @@
 import React from "react";
 import { blogingBro, BlogPoints } from "../data";
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
+import { SiHashnode } from "react-icons/si";
 
 const Blog = () => {
   return (
@@ -37,7 +38,8 @@ const Blog = () => {
               rel="noreferrer"
               className="px-6 py-1 rounded-full flex items-center gap-x-2 text-lg font-inter font-semibold text-white bg-blue-600"
             >
-              Expore Blogs <ArrowTopRightOnSquareIcon className="w-5 h-5" />
+              <SiHashnode className="w-5 h-5" /> Expore Blogs{" "}
+              <ArrowTopRightOnSquareIcon className="w-5 h-5" />
             </a>
             {/* heads */}
             <h2 className="text-center text-slate-700 font-lexend leading-8 sm:leading-10 font-extrabold tracking-tight text-4xl sm:text-5xl">
