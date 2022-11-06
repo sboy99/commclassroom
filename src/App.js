@@ -6,6 +6,7 @@ import {
   HomePage,
   RoadMapsPage,
   PodcastsPage,
+  ErrorPage,
 } from "./pages";
 import { Layout } from "./components";
 
@@ -20,6 +21,7 @@ const App = () => {
           <Route path="/podcasts" element={<PodcastsPage />} />
           <Route path="/roadmaps" element={<RoadMapsPage />} />
         </Route>
+        <Route path="*" element={<ErrorPage />} />
       </Routes>
     </div>
   );

@@ -93,3 +93,4 @@ function NavigationLinks() {
 // attribution:
 // {/* <a href="https://storyset.com/business">Business illustrations by Storyset</a>; */}
 // {/* <a href="https://storyset.com/work">Work illustrations by Storyset</a>; */}
+// {/* <a href="https://storyset.com/web">Web illustrations by Storyset</a>; */}

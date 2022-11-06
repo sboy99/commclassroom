@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import { ChevronRightIcon } from "@heroicons/react/24/outline";
 import {
   event,
@@ -53,12 +53,13 @@ const Events = () => {
               ))}
             </div>
             {/* button */}
-            <Link
-              to={`/events`}
+            <HashLink
+              smooth
+              to={`/events/#top`}
               className="flex items-center gap-x-2 w-fit mt-4 px-6 py-2 text-white bg-gradient-to-r from-blue-600 to-cyan-500 rounded-full capitalize font-medium text-lg"
             >
               Explore events <ChevronRightIcon className="w-5 h-5" />
-            </Link>
+            </HashLink>
           </div>
           {/* right */}
           <div className="mt-4 lg:mt-0">

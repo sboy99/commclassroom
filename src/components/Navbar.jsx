@@ -55,6 +55,8 @@ const Navbar = () => {
             {ExternalLinks.map((link, index) => (
               <a
                 key={index}
+                target="_blank"
+                rel="noreferrer"
                 href={link.to}
                 className={`px-3 py-1 font-semibold flex items-center gap-x-1 ${link.color}`}
               >
@@ -76,7 +78,7 @@ export default Navbar;
 
 const SmallScreenNavbar = () => {
   return (
-    <div className="h-16 flex items-center container mx-auto px-4">
+    <div className="h-16 flex items-center container mx-auto sm:px-4">
       <Popover className="relative z-0 px-4">
         {({ open }) => (
           <>
@@ -85,9 +87,9 @@ const SmallScreenNavbar = () => {
             >
               <div className={`${open ? `text-rose-600` : `text-blue-600`}`}>
                 {open ? (
-                  <XMarkIcon className="w-7 h-7" />
+                  <XMarkIcon className="w-6 h-6 sm:w-7 sm:h-7" />
                 ) : (
-                  <Bars3Icon className="w-7 h-7" />
+                  <Bars3Icon className="w-6 h-6 sm:w-7 sm:h-7" />
                 )}
               </div>
             </Popover.Button>
@@ -131,6 +133,8 @@ const SmallScreenNavbar = () => {
                 </ul>
                 <a
                   href="https://github.com/commclassroom/commclassroom"
+                  target={`_blank`}
+                  rel="noreferrer"
                   className="text-center w-full bg-slate-100 rounded-md text-slate-700 font-semibold capitalize py-2 px-4 mt-2 flex items-center justify-center gap-x-2"
                 >
                   <AiFillGithub className="w-6 h-6" />

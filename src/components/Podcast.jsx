@@ -29,6 +29,8 @@ const Podcast = () => {
         {/* right */}
         <a
           href="https://www.youtube.com/playlist?list=PL9gnSGHSqcnqwmKYZ5rHuzqe32Di47KMr"
+          target={`_blank`}
+          rel="noreferrer"
           className="relative z-0"
         >
           {/* mike */}
