@@ -1,6 +1,5 @@
 import React from "react";
 import { FooterLinks } from "../data";
-import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
 import { FaGithub } from "react-icons/fa";
@@ -72,7 +71,7 @@ function NavigationLinks() {
                     {link.title}{" "}
                     <ArrowTopRightOnSquareIcon className="w-4 h-4" />
                   </a>
-                ) : link?.isHashed ? (
+                ) : (
                   <HashLink
                     key={link.title + index}
                     to={link.to}
@@ -81,14 +80,6 @@ function NavigationLinks() {
                   >
                     {link.title}
                   </HashLink>
-                ) : (
-                  <Link
-                    key={link.title + index}
-                    to={link.to}
-                    className="hover:text-sky-400"
-                  >
-                    {link.title}
-                  </Link>
                 )}
               </>
             ))}

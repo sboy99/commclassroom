@@ -172,32 +172,26 @@ export const FooterLinks = [
       {
         title: `Home`,
         to: `/#top`,
-        isHashed: true,
       },
       {
         title: `About`,
         to: `/#about`,
-        isHashed: true,
       },
       {
         title: `Blog`,
         to: `/#blog`,
-        isHashed: true,
       },
       {
         title: `Courses`,
         to: `/courses/#top`,
-        isHashed: true,
       },
       {
         title: `Roadmaps`,
         to: `/roadmaps/#top`,
-        isHashed: true,
       },
       {
         title: `Events`,
         to: `/events/#top`,
-        isHashed: true,
       },
     ],
   },
