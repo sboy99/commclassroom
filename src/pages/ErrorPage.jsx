@@ -1,6 +1,7 @@
 import React from "react";
 import { notFound } from "../data";
 import { HashLink } from "react-router-hash-link";
+import { HomeIcon } from "@heroicons/react/24/solid";
 
 const ErrorPage = () => {
   return (
@@ -16,8 +17,8 @@ const ErrorPage = () => {
           />
         </div>
         {/* action */}
-        <div className="absolute left-1/2 -translate-x-1/2 bottom-6 translate-y-1/2 text-center flex flex-col justify-center items-center gap-y-1">
-          <h1 className=" text-4xl sm:text-6xl lg:text-7xl font font-inter font-extrabold tracking-tighter px-4 bg-gradient-to-r from-blue-600 to-blue-500 text-transparent bg-clip-text">
+        <div className="absolute left-1/2 -translate-x-1/2 -bottom-2 sm:bottom-6 translate-y-1/2 text-center flex flex-col justify-center items-center gap-y-1">
+          <h1 className=" text-5xl sm:text-6xl lg:text-7xl font font-inter font-extrabold tracking-tighter px-4 bg-gradient-to-r from-blue-600 to-blue-500 text-transparent bg-clip-text">
             Oops
           </h1>
           <p className="text-slate-700 text-xl font-semibold capitalize">
@@ -27,10 +28,9 @@ const ErrorPage = () => {
           <HashLink
             smooth
             to="/#top"
-            className="px-6 py-1 rounded-full bg-blue-600/20 text-blue-600 font-medium text-lg "
+            className="px-6 py-1 rounded-full bg-blue-600/10 text-blue-600 font-medium text-lg flex items-center justify-center gap-x-2 whitespace-nowrap "
           >
-            {" "}
-            Back To Home
+            <HomeIcon className="w-6 h-6" /> Back To Home
           </HashLink>
         </div>
       </div>
