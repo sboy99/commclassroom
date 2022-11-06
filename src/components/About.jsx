@@ -3,7 +3,10 @@ import { AboutUs, aboutUsImage } from "../data";
 
 const About = () => {
   return (
-    <section className="relative overflow-hidden z-0 h-screen-75 bg-slate-700 flex items-center">
+    <section
+      id="about"
+      className="relative overflow-hidden z-0 h-screen-75 bg-slate-700 flex items-center"
+    >
       <div className="relative container mx-auto p-4 ">
         {/* image */}
         <div className="flex-auto absolute right-0 md:right-16 -top-44 pointer-events-none overflow-hidden -z-10">

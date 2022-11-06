@@ -162,3 +162,78 @@ export const BlogPoints = [
     desc: `These blogs are written with the present in mind, all of these blogs are up to date.`,
   },
 ];
+
+// Footer
+
+export const FooterLinks = [
+  {
+    heading: `Sitemap`,
+    links: [
+      {
+        title: `Home`,
+        to: `/#top`,
+        isHashed: true,
+      },
+      {
+        title: `About`,
+        to: `/#about`,
+        isHashed: true,
+      },
+      {
+        title: `Blog`,
+        to: `/#blog`,
+        isHashed: true,
+      },
+      {
+        title: `Courses`,
+        to: `/courses/#top`,
+        isHashed: true,
+      },
+      {
+        title: `Roadmaps`,
+        to: `/roadmaps/#top`,
+        isHashed: true,
+      },
+      {
+        title: `Events`,
+        to: `/events/#top`,
+        isHashed: true,
+      },
+    ],
+  },
+  {
+    heading: `Community`,
+    links: [
+      {
+        title: `Youtube`,
+        to: `https://www.youtube.com/c/KunalKushwaha/`,
+        isExternal: true,
+      },
+      {
+        title: `Discord`,
+        to: `https://discord.io/commclassroom`,
+        isExternal: true,
+      },
+      {
+        title: `Telegram`,
+        to: `https://t.me/commclassroom`,
+        isExternal: true,
+      },
+      {
+        title: `Twitter`,
+        to: `https://twitter.com/commclassroom/`,
+        isExternal: true,
+      },
+      {
+        title: `Instagram`,
+        to: `https://www.instagram.com/commclassroom/`,
+        isExternal: true,
+      },
+      {
+        title: `Github`,
+        to: `https://github.com/commclassroom`,
+        isExternal: true,
+      },
+    ],
+  },
+];
