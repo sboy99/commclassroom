@@ -26,6 +26,8 @@ const JoinDiscord = () => {
         {/* button */}
         <a
           href="https://discord.io/commclassroom"
+          target="_blank"
+          rel="noreferrer"
           className="mt-2 text-indigo-600 font-medium px-4 py-2 rounded-lg capitalize text-xl flex items-center gap-x-2 bg-indigo-50 border border-indigo-50"
         >
           <FaDiscord className="w-7 h-7" />

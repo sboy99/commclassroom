@@ -7,7 +7,7 @@ import { CourseFeatures } from "../data";
 const Courses = () => {
   return (
     <div
-      id="course"
+      id="courses"
       className="relative min-h-screen-50 overflow-hidden z-0 bg-slate-800 py-8 lg:py-2"
     >
       {/* overlay */}
