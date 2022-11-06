@@ -56,11 +56,10 @@ function NavigationLinks() {
           {/* links */}
           <div className="font-medium font-inter text-slate-300 flex flex-col justify-center gap-y-2 pt-2">
             {footer.links.map((link, index) => (
-              <>
+              <div key={link.title + index}>
                 {/* lvl 1 linking */}
                 {link?.isExternal ? (
                   <a
-                    key={link.title + index}
                     href={link.to}
                     className="hover:text-sky-400 flex items-center gap-2"
                     target="_blank"
@@ -70,16 +69,11 @@ function NavigationLinks() {
                     <ArrowTopRightOnSquareIcon className="w-4 h-4" />
                   </a>
                 ) : (
-                  <HashLink
-                    key={link.title + index}
-                    to={link.to}
-                    smooth
-                    className="hover:text-sky-400"
-                  >
+                  <HashLink to={link.to} smooth className="hover:text-sky-400">
                     {link.title}
                   </HashLink>
                 )}
-              </>
+              </div>
             ))}
           </div>
         </div>
