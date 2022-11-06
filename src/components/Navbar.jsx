@@ -13,7 +13,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="w-full lg:sticky lg:inset-0 -z-10 lg:z-50 backdrop-blur-lg bg-white/90 border-b border-slate-300/50">
+      <nav className="w-full min-h-16 sm:sticky sm:inset-0 z-50 backdrop-blur-lg bg-white/90 border-b border-slate-300/50">
         {/* upper nav */}
         <div className="lg:h-20 gap-16 w-full container mx-auto flex items-center justify-between px-4 lg:px-0">
           {/* logo */}
@@ -68,7 +68,7 @@ const Navbar = () => {
                 >
                   {" "}
                   <link.Icon className="w-6 h-6" />{" "}
-                  <span className="hidden md:block">{link.title}</span>
+                  <span className="hidden sm:block">{link.title}</span>
                 </a>
               ))}
             </div>
@@ -85,8 +85,8 @@ export default Navbar;
 
 const SmallScreenNavbar = () => {
   return (
-    <nav className="w-full sticky inset-0 z-50 backdrop-blur-lg bg-white/90 border-b border-slate-300/50">
-      <div className="h-16 flex items-center container mx-auto">
+    <nav className="w-full sticky inset-x-0 top-0 sm:top-16 z-50 backdrop-blur-lg bg-white/90 border-b border-slate-300/50">
+      <div className="min-h-16 sm:min-h-[3rem] flex items-center container mx-auto">
         <Popover className="relative z-0 px-4">
           {({ open }) => (
             <>
@@ -95,9 +95,9 @@ const SmallScreenNavbar = () => {
               >
                 <div className={`${open ? `text-rose-600` : `text-blue-600`}`}>
                   {open ? (
-                    <XMarkIcon className="w-6 h-6 sm:w-7 sm:h-7" />
+                    <XMarkIcon className="sm:w-6 sm:h-6 w-7 h-7" />
                   ) : (
-                    <Bars3Icon className="w-6 h-6 sm:w-7 sm:h-7" />
+                    <Bars3Icon className="sm:w-6 sm:h-6 w-7 h-7" />
                   )}
                 </div>
               </Popover.Button>
@@ -123,7 +123,7 @@ const SmallScreenNavbar = () => {
                 leaveFrom="opacity-100 translate-y-0"
                 leaveTo="opacity-0 translate-y-1"
               >
-                <Popover.Panel className="fixed inset-0 z-20 mt-16 h-fit w-full max-w-md mx-auto p-4 rounded-md bg-white shadow-md shadow-slate-300/50">
+                <Popover.Panel className="fixed inset-0 z-20 mt-16 sm:mt-12 h-fit w-full max-w-md mx-auto p-4 rounded-md bg-white shadow-md shadow-slate-300/50">
                   <ul className="grid grid-cols-2 gap-2 place-content-center">
                     {Links.map((link, index) => (
                       <Popover.Button
