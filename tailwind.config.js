@@ -55,14 +55,18 @@ module.exports = {
         "autofill-12": "repeat(auto-fill,minmax(12rem,1fr))",
         "autofill-14": "repeat(auto-fill,minmax(14rem,1fr))",
         "autofill-16": "repeat(auto-fill,minmax(16rem,1fr))",
-        "autofill-20": "repeat(auto-fill,minmax(20rem,1fr))",
+        "autofill-24": "repeat(auto-fill,minmax(24rem,1fr))",
+        "autofill-28": "repeat(auto-fill,minmax(28rem,1fr))",
+        "autofill-32": "repeat(auto-fill,minmax(32rem,1fr))",
+        "autofill-36": "repeat(auto-fill,minmax(36rem,1fr))",
+        "autofill-40": "repeat(auto-fill,minmax(40rem,1fr))",
       },
     },
   },
   plugins: [
     require("@tailwindcss/aspect-ratio"),
     require("@tailwindcss/line-clamp"),
-    function({ addUtilities }) {
+    function ({ addUtilities }) {
       addUtilities({
         ".scrollbar-hide": {
           /* IE and Edge */
@@ -70,7 +74,7 @@ module.exports = {
 
           /* Firefox */
           "scrollbar-width": "none",
-          
+
           /* Safari and Chrome */
           "&::-webkit-scrollbar": {
             display: "none",

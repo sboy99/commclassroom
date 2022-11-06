@@ -7,6 +7,7 @@ import {
   RoadMapsPage,
   PodcastsPage,
   ErrorPage,
+  AttributePage,
 } from "./pages";
 import { Layout } from "./components";
 
@@ -16,10 +17,11 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
-          <Route path="/courses" element={<CoursePage />} />
-          <Route path="/events" element={<EventsPage />} />
-          <Route path="/podcasts" element={<PodcastsPage />} />
-          <Route path="/roadmaps" element={<RoadMapsPage />} />
+          <Route path="courses" element={<CoursePage />} />
+          <Route path="events" element={<EventsPage />} />
+          <Route path="podcasts" element={<PodcastsPage />} />
+          <Route path="roadmaps" element={<RoadMapsPage />} />
+          <Route path="attributes" element={<AttributePage />} />
         </Route>
         <Route path="*" element={<ErrorPage />} />
       </Routes>
