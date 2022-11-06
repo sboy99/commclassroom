@@ -232,4 +232,22 @@ export const FooterLinks = [
       },
     ],
   },
+  {
+    heading: `Attribution`,
+    links: [
+      {
+        title: `Assets`,
+        to: `/attributes/#top`,
+      },
+    ],
+  },
+];
+
+// Attributes
+export const credits = [
+  {
+    toWhom: `Storyset`,
+    desc: `Most of the illustrations used in this website are downloaded from Storyset. We are so Thankful towards Storyset for making such beautiful illustrations`,
+    visit: `https://storyset.com/business`,
+  },
 ];
