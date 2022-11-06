@@ -43,23 +43,21 @@ export default Footer;
 
 function NavigationLinks() {
   return (
-    <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8">
+    <div className="w-full max-w-xl grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8 my-4">
       {FooterLinks.map((footer, index) => (
         <div
           key={footer.heading + index}
-          className="space-y-2 divide-y divide-sky-600"
+          className="space-y-2 divide-y divide-sky-600 max-w-[10rem]"
         >
           {/* heading */}
           <h1 className="text-lg font-lexend font-semibold text-sky-400">
             {footer.heading}
           </h1>
           {/* links */}
-          <div className="font-medium font-inter text-slate-300 flex flex-col justify-center gap-y-1 pt-2">
+          <div className="font-medium font-inter text-slate-300 flex flex-col justify-center gap-y-2 pt-2">
             {footer.links.map((link, index) => (
               <>
-                {/* lvl 1 links */}
-
-                {/* lvl 2 linking */}
+                {/* lvl 1 linking */}
                 {link?.isExternal ? (
                   <a
                     key={link.title + index}
